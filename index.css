@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     color: #fff;
+     list-style: none;
+     
+}
+
+
+body{
+     padding: 30px;
+    background-image: radial-gradient(circle, #99a8bc, #96a5c6, #98a2cf, #a09cd5, #ad95d8);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 28%;
+    height: 50px;
+    background-color: #9AC1E4;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(8.8px);
+    transition: 0.5s;
+    
+    
+}
+
+.navbar ul{
+    display: flex;
+    position: relative;
+    gap: 80px;
+    transition: 0.5s;
+    transition:  0.5s;
+}
+.navbar ul li{
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.navbar img{
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.navbar img:hover{
+    transition: 1s;
+}
+.navbar ul li:hover{
+    width: 140px;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+     height: 30px;
+     background: rgba(255, 255, 255, 0.14);
+     border-radius: 12px;
+     box-shadow: 0 10px 45px rgba(0, 0, 0, 0.3);
+     backdrop-filter: blur(8.8px);
+     -webkit-backdrop-filter: blur(8.8px);
+     
+     
+}
+
+.navbar ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.11);
+    transition: 0.5s
+}
+.navbar li:hover::before{
+    
+    opacity: 1;
+}
+.navbar ul li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.14);
+    transition: 0.5s;
+
+}
+.navbar ul li .icn{
+    /* color: #fff; */
+    font-size: 1.5rem;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.navbar ul li:hover .icn{
+    transform: scale(0);
+    transition-delay: 0s;
+     /* color: #fff */
+}
+.navbar ul li span{
+    position: absolute;
+
+}
+ .navbar ul li .title{
+    color: rgb(65, 45, 112);
+    padding: 12px;
+    font-size: 1.25rem;
+    /* text-transform :uppercase; */
+     /* letter-spacing: 0.1em; */
+     transform: scale(0);
+     transition: 0.4s;
+     transition-delay: 0s;
+}
+.navbar ul  li:hover .title{
+ transform: scale(1);
+ transition: 0.25s;
+ transition-delay: 0.20s;
+ 
+}
+
+.container{
+    
+    width: 1400px;
+    height: 80vh;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+background: rgba(255, 255, 255, 0.11);
+border-radius: 25px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.8px);
+-webkit-backdrop-filter: blur(8.8px);
+}
