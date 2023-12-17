@@ -348,6 +348,7 @@ text-wrap: jus;
     display: block;
     padding: 7px;
     margin-left: 20%;
+    flex-grow: 3;
 }
 #contact input{
     align-items: center;
@@ -364,6 +365,7 @@ border: none;
 color: #1e0453;
 font-size: 1.1rem;
 filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.845));
+flex-grow: 1`;
   
 }
 #contact  ::placeholder{
