@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -60,8 +61,19 @@
       <span> <p>A <span class="ftn">Front-End Web Developer </span>passionate about creating interactive application and experience on the web</p></span>
 
   <div class="btn">
-      <button class="bn5">Hire Me</button>
-      <button class="bn5">Resume</button>
+      <button class="bn5" id="hireme">Hire Me</button>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          
+        <input type="text " placeholder="Name">
+        </div>
+      
+      </div>
+      <button class="bn5"><a href="https://drive.google.com/file/d/1LnYevlRX887RlBcUmGbAfeC5MPN_tDK0/view?usp=drive_link">Resume</a></button>
      </div>
     </div>
 
@@ -69,7 +81,7 @@
       <h1 class="heading">About me</h1>
     <div class="content">
       <div class="leftc">
-        <p>I'm a passionate front-end developer with a love for crafting beautiful and user-friendly web experiences. With a strong foundation in HTML, CSS, and JavaScript, I bring websites to life by turning design concepts into responsive, interactive, and accessible web applications.
+        <p>I'm a passionate <span class="ftn">front-end developer </span> with a love for crafting beautiful and user-friendly web experiences. With a strong foundation in HTML, CSS, and JavaScript, I bring websites to life by turning design concepts into responsive, interactive, and accessible web applications.
           My journey in web development began with a curiosity about how websites work and a desire to create captivating digital spaces. Over the years, I've honed my skills in front-end technologies and kept up with the latest trends and best practices to deliver exceptional results.
           </p>
       </div>
@@ -210,7 +222,7 @@
  </div>
 
  <div id="Portfolio">
-   <h3>My Work</h3>
+   <h2 class="heading">My Work</h2>
     <div class="projects">
        <table>
         <tr>
