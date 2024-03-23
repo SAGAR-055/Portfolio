@@ -1,7 +1,12 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
       
 h1{
     font-size: medium;
+}
+
+
+.heading{
+    font-size: 0.9rem;
 }
 .navbar{
     width: 300px;
@@ -32,12 +37,13 @@ h1{
         transition: 0.5s;
         width: 20px;
         height: auto;
+        user-select: none;
         
     }
     .navbar a{
         text-decoration: none;
         color: rgb(65, 45, 112);
-    
+      user-select: none;
         
     }
     .navbar img:hover{
@@ -119,11 +125,21 @@ h1{
         border-radius: 15px;
         padding: 20px;
         width: 100%;
-        height: 70vh;
+        height: 75vh;
+        user-select: none;
     }
-   #home{
-    padding: 16px;
-   }
+    #home{
+        display: block;
+      inset: 0;
+      width: 100%;
+      height: 75vh;
+      /* padding: 60px;
+       */
+       padding-top: 25%;
+      justify-content: center;
+      align-self: center;
+      align-items: center;
+    }
 #home img{
    width: 100px;
    height: 100px;
@@ -146,5 +162,195 @@ h1{
     margin: 5px;
     font-size: 0.5rem;
     font-weight: 600;
+}
 
+.modal {
+padding-top: 70%;
+}
+.modal-content {
+padding: 8px;
+width: 70%;
+height:auto;
+border: 6px;
+
+
+}
+.modal-content input{
+    margin: 4px;
+    padding: 2px;
+    font-size: 0.4rem;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.modal-content textarea{
+    width: 180px;
+    height: 60px;
+    margin: 0;
+    border-radius: 4px;
+    font-size: 0.4rem;
+}
+
+.modal-content ::placeholder{
+    font-size: 0.4rem;
+}
+#aboutme{
+    display: block;
+    inset: 0;
+    width: 100%;
+    height: 75vh;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 10px;
+    /* padding-top: 70px; */
+  } 
+
+#aboutme .content {
+width: 100%;
+border: none;
+flex-direction: column;
+}
+#aboutme .content .leftc {
+font-size: 0.7rem;
+height: 80%;
+width: 100%;
+padding: 5px;
+padding-top: 20px;
+}
+
+
+#aboutme .content .rightc {
+width: 100%;
+height: 70%;
+font: 1rem;
+gap:5px;
+}
+#aboutme .content .rightc ul{
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ 
+ #aboutme .content .rightc li{
+ font-size: 0.45em;
+ margin-top: 10px;  
+ }
+ 
+ #aboutme .content .rightc li .tittle{
+     color: #2b0f61;
+     padding: 3px;
+     font-weight: 900;
+ } 
+
+ #resume{
+    inset: 0;
+      width: 100%;
+      height: 75vh;
+      padding: 10px;
+    
+}
+.skills{
+    flex-direction: column;
+}
+
+.containers{
+    max-width: 500px;
+    padding: 5px;
+
+}
+.container .skill-box{
+height: 4vh;
+margin: ;
+}
+
+.skill-box .title{
+font-size: 0.5rem;
+padding: 10px;
+}
+
+.skillstag{
+  border-radius: 6px;
+  height: 30%;
+}
+fieldset{
+padding: 20px;
+height: 200px;
+margin-top: 30px;
+justify-content: center;
+}
+
+.tools p{
+ width: 40%;
+ height: 40px;
+ padding: 3px;
+ border-radius: 6px;
+ font-size: 0.7rem;
+
+}
+#Portfolio{
+    inset: 0;
+    width: 100%;
+    height: 75vh;
+    padding: 10px;
+}  
+.projects{
+    padding: 10px;
+    width: 100%;
+}
+.projects p{
+ font-size: 0.7rem;
+}
+.projects imgs{
+    padding: 5px;
+     justify-content: center;
+     text-align: center;
+     margin: 10px;
+}
+.projects .imgs img{
+margin: 10px;
+max-width: 150px;
+max-height: 200px;
+border-radius: 6px;
+}
+
+#contact{
+    inset: 0;
+    width: 100%;
+    height: 75vh;
+    padding: 10px;
+}             
+#contact iframe{
+border-radius: 15px;
+height: 90px;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+} 
+#contact input{
+  margin: 5px;
+  margin-bottom: 15px;
+    border-radius: 3px;
+ padding: 6px;
+ font-size: 0.7rem;
+
+}
+
+#contact  ::placeholder{
+font-size: small;
+}
+
+#textarea{
+    font-size: 0.7rem;
+    padding: 6px;
+
+}
 }
