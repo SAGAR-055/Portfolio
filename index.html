@@ -48,7 +48,7 @@
   <div class="container">
      <div id="home">
    
-        <img src="./assets/—Pngtree—business man avatar_8855195.png" alt="" class="avatar">
+        <img src="./assets/avatar.png" alt="" class="avatar">
         <br>
        <h1>SAGAR CHAVAN</h1>
       <br>
@@ -66,16 +66,21 @@
 
         <!-- Modal content -->
         <div class="modal-content">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="30957b26-051e-45a5-a2c1-c246ff669919">
           <span class="close">&times;</span>
+    
 
-        <input type="text " placeholder="Name">
-        <input type="text " placeholder="Company-Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Job-Role">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="name" placeholder="Company-Name" >
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="name" placeholder="Job-Role">
 
         <br>
-        <textarea name="" id="textarea" placeholder="Subject"></textarea>
+        <textarea name="message" id="textarea" placeholder="Subject"></textarea>
         <button class="bn5"> Sent</button>
+        <!-- <div id="result"></div> -->
+          </form>
         </div>
       
       </div>
@@ -276,21 +281,33 @@
 
 
  <div id="contact">
+  
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="30957b26-051e-45a5-a2c1-c246ff669919">
 
   <h1 class="heading">Contact</h1>
   <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d12735.167740934081!2d76.5611538622909!3d18.38429192096375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDIyJzQ2LjMiTiA3NsKwMzMnNTcuNiJF!5e0!3m2!1sen!2sin!4v1702295563099!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
   <h3 class="heading">Get in touch</h3>
+  
+  
+
   <div class="cont">
-    <input type="text " placeholder="Name">
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="subject">
+    <input type="text" name="name" id="name" placeholder="Name" required>
+    <input type="email" name="email" id="email" placeholder="Email" required>
+    <input type="text" placeholder="subject" >
+  
   </div>
     <br>
-    <textarea name="" id="textarea" cols="30" rows="5" placeholder="Message..."></textarea>  
-    <button class="bn5">Send</button>
- </div>
+    <textarea name="message" required id="textarea" cols="30" rows="5" placeholder="Message..."></textarea>  
+    
 
+    <button type="submit" class="bn5">Send</button>
+    </form>
+ </div>
 <script src="script.js"></script>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+</script>
 </body>
 </html>
