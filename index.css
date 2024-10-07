@@ -629,17 +629,22 @@ flex-grow: 1;
     text-align: center;
     padding: 20px;
 }
-
+#contact  .cont{
+    width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
 
 #contact input{
     align-items: center;
- 
+  margin: 20px;
  border-radius: 6px;
  text-align: center;
  padding: 15px;
-display: inline-block;
+ display: inline-flexbox;
 justify-content: center;
-align-items: center;
+
 align-self: center;
 background-color: #98a2cf;
 border: none;
