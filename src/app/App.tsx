@@ -224,7 +224,7 @@ function HeroOrb() {
           className="text-2xl font-bold text-white mt-0.5"
           style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
         >
-          3+ Yrs
+          1+ Yrs
         </div>
       </motion.div>
     </div>
@@ -682,7 +682,7 @@ export default function App() {
                 className="w-1.5 h-1.5 rounded-full animate-pulse"
                 style={{ backgroundColor: "#7c3aed" }}
               />
-              Available for Freelance Work
+              Available for Work
             </motion.div>
 
             <motion.h1
@@ -955,7 +955,7 @@ export default function App() {
             </p>
 
             <a
-              href="mailto:hello@devcraft.io"
+              href="mailto:sagarsuhaschavan367@gmail.com"
               className="inline-flex items-center gap-3 px-9 py-4 rounded-2xl font-semibold text-white text-base md:text-lg mb-16 transition-all duration-200 hover:scale-105 hover:brightness-110"
               style={{
                 background: "linear-gradient(135deg, #7c3aed, #5b21b6)",
@@ -969,9 +969,9 @@ export default function App() {
             {/* Social links */}
             <div className="flex items-center justify-center gap-4 mb-14">
               {[
-                { Icon: Github, label: "GitHub", href: "#" },
-                { Icon: Linkedin, label: "LinkedIn", href: "#" },
-                { Icon: Mail, label: "Email", href: "mailto:hello@devcraft.io" },
+                { Icon: Github, label: "GitHub", href: "https://github.com/SAGAR-055" },
+                { Icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sagar-chavan-7993073a6/" },
+                { Icon: Mail, label: "Email", href: "mailto:sagarsuhaschavan367@gmail.com" },
               ].map(({ Icon, label, href }) => (
                 <a
                   key={label}
