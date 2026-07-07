@@ -23,6 +23,7 @@ export default defineConfig({
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
+    base: '/Portfolio/',
   ],
   resolve: {
     alias: {
