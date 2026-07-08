@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main' # Change to 'master' if your default branch is master
+    branches: ['main'] # Change to 'master' if your default branch is master
 
 permissions:
   contents: read
@@ -17,7 +17,8 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps: deployment.outputs.page_url }}
+      # FIXED: Changed "steps:" to "steps."
+      url: ${{ steps.deployment.outputs.page_url }} 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,13 +37,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Build
         run: pnpm build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
